@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99FBE5F7">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_margin="10dp">
+
+        <ListView
+            android:id="@+id/display_single_student_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/background_gradient"
+        android:layout_margin="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Entries: "
+                android:textSize="20sp"
+                android:textColor="@color/black"></TextView>
+            <TextView
+                android:id="@+id/total_student_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Costs: "
+                android:textSize="20sp"
+                android:textColor="@color/black"></TextView>
+            <TextView
+                android:id="@+id/cost_student_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default"
+                android:textSize="20sp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

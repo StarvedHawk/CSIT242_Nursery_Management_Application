@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".addStaff"
+    android:background="#F8E0E0">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Staff Information"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:layout_margin="20dp"
+            android:layout_centerInParent="true"></TextView>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp"
+        android:background="@drawable/gradient_staff">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <EditText
+                android:layout_centerInParent="true"
+                android:id="@+id/hire_Username"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:hint="username"
+                android:textColorHint="@color/white"
+                ></EditText>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <EditText
+                android:layout_centerInParent="true"
+                android:id="@+id/hire_password"
+                android:layout_width="400dp"
+                android:layout_height="50dp"
+                android:textColorHint="@color/white"
+                android:hint="Password"></EditText>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin : "
+                android:textColor="@color/white"
+                ></TextView>
+            <Switch
+                android:id="@+id/hire_Admin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Switch>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Super : "
+                android:textColor="@color/white"
+                ></TextView>
+            <Switch
+                android:id="@+id/hire_super"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Switch>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp">
+
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/hire_b_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Hire"
+            android:backgroundTint="@color/white"
+            android:textColor="@color/red_black"
+            android:textSize="20sp"></Button>
+    </RelativeLayout>
+</LinearLayout>

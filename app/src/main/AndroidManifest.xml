@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.assignment_1">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment_1">
+        <activity
+            android:name=".addStaff"
+            android:exported="false" />
+        <activity
+            android:name=".buildNursery"
+            android:exported="false" />
+        <activity
+            android:name=".MainSuperActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnrollStudentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyChargesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ManageExpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CurrentExpensesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AllStudentStatementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GenerateAllStatementActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfitMarginActivity"
+            android:exported="false" />
+        <activity android:name=".MainAdminActivity"/>
+        <activity android:name=".MainStaffActivity" />
+        <activity android:name=".ChargeStudentActivity" />
+        <activity android:name=".SingleStudentStatementActivity"/>
+        <activity android:name=".GenerateStatementActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

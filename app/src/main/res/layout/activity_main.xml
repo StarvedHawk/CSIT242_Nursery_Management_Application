@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="#99FBE5F7">
+
+    <ImageView
+        android:id="@+id/logo_id"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo_img"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        ></ImageView>
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       >
+
+       <ImageButton
+           android:id="@+id/helper_id"
+           style="?android:attr/borderlessButtonStyle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentRight="true"
+           android:layout_marginStart="5dp"
+           android:layout_marginTop="5dp"
+           android:layout_marginEnd="5dp"
+           android:layout_marginBottom="5dp"
+           android:src="@drawable/info_d"></ImageButton>
+
+
+       <LinearLayout
+           android:id="@+id/ll"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginStart="60dp"
+           android:layout_marginTop="60dp"
+           android:layout_marginEnd="60dp"
+           android:layout_marginBottom="60dp"
+           android:background="@drawable/background_gradient"
+           android:orientation="vertical"
+           android:padding="20dp">
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_margin="20dp"
+               android:text="All Staff Login"
+               android:textColor="@color/black"
+               android:textSize="20sp"></TextView>
+
+
+           <EditText
+               android:id="@+id/user_name_id"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:hint="Username"
+               android:textColorHint="@color/black"></EditText>
+
+
+           <EditText
+               android:id="@+id/password_id"
+               android:layout_width="match_parent"
+               android:layout_height="50dp"
+               android:hint="Password"
+               android:inputType="textPassword"
+               android:textColorHint="@color/black"></EditText>
+
+
+           <Button
+               android:id="@+id/login_button_id"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:backgroundTint="@color/black"
+               android:text="Login"
+               android:textColor="@color/white"></Button>
+
+
+       </LinearLayout>
+
+       <Switch
+           android:id="@+id/Switch_Toggle"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="15dp"
+           android:layout_marginRight="80dp"
+           android:visibility="invisible"
+           android:layout_toStartOf="@+id/helper_id"></Switch>
+       <TextView
+           android:layout_below="@+id/ll"
+           android:layout_gravity="center"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:id="@+id/database_check">
+       </TextView>
+   </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ModifyChargesActivity"
+    android:background="#C4C5C6">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name: "
+                android:textSize="15sp"
+                android:textColor="@color/black"></TextView>
+            <TextView
+                android:id="@+id/n_name_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Initial Charge: "
+                android:textSize="15sp"
+                android:textColor="@color/black"></TextView>
+            <TextView
+                android:id="@+id/n_min_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Extra Charge: "
+                android:textSize="15sp"
+                android:textColor="@color/black"></TextView>
+            <TextView
+                android:id="@+id/n_max_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"></TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hours: "
+                android:textSize="15sp"
+                android:textColor="@color/black"></TextView>
+            <TextView
+                android:id="@+id/n_hours_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="default"
+                android:textSize="15dp"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/black"></TextView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gradient_color"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        >
+
+        <EditText
+            android:id="@+id/min_id"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:hint="Initial Charge Amount"
+            android:textColorHint="@color/white"></EditText>
+
+        <EditText
+            android:id="@+id/max_id"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_margin="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/min_id"
+            android:hint="Extra Time Charge"
+            android:textColorHint="@color/white"></EditText>
+
+        <TextView
+            android:id="@+id/modify_hours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hours"
+            android:layout_marginLeft="170dp"
+            android:textColor="@color/white"
+            android:layout_below="@id/max_id"
+            android:textSize="20sp"></TextView>
+
+        <Spinner
+            android:id="@+id/hour_spinner"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/modify_hours"
+            android:layout_centerInParent="true"
+            android:entries="@array/m_hours" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/make_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#36454F"
+            android:text="Make Change"></Button>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

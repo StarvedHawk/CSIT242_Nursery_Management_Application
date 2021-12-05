@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageExpensesActivity"
+    android:background="#C4C5C6">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/gradient_color">
+            <EditText
+                android:id="@+id/amt_id"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:hint="Amount"
+                android:textColorHint="@color/white"
+                android:layout_marginLeft="110dp"
+                android:layout_marginBottom="20dp"
+                android:textSize="20sp"></EditText>
+            <TextView
+                android:id="@+id/exp_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Utility Expense"
+                android:layout_marginLeft="85dp"
+                android:textColor="@color/white"
+                android:layout_below="@+id/amt_id"
+                android:padding="10dp"
+                android:textSize="20sp"></TextView>
+            <Spinner
+                android:id="@+id/type_spinner"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/exp_type"
+                android:layout_centerInParent="true"
+                android:entries="@array/expense_type"
+                android:layout_margin="10dp"/>
+
+            <TextView
+                android:id="@+id/text_m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Month"
+                android:textColor="@color/white"
+                android:layout_below="@+id/type_spinner"
+                android:layout_marginLeft="50dp"
+                android:textSize="20sp"></TextView>
+            <Spinner
+                android:id="@+id/month_spinner"
+                android:layout_width="150dp"
+                android:layout_below="@+id/text_m"
+                android:layout_height="50dp"
+                android:entries="@array/manage_months"
+                />
+            <TextView
+                android:id="@+id/text_y"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                android:textColor="@color/white"
+                android:layout_below="@+id/type_spinner"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dp"
+                android:textSize="20sp"></TextView>
+            <Spinner
+                android:id="@+id/year_spinner"
+                android:layout_width="150dp"
+                android:layout_below="@+id/text_y"
+                android:layout_height="50dp"
+                android:entries="@array/manage_years"
+                android:layout_alignParentRight="true"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/gen_all_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Add Expense"
+                android:backgroundTint="#36454F"></Button>
+        </RelativeLayout>
+
+
+    </LinearLayout>

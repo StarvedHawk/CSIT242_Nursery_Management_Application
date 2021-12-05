@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#99FBE5F7">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@drawable/background_gradient"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/gen_single_stu_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#003b59"
+                android:text="Generate Student Statement"
+                android:layout_marginLeft="30dp"
+                android:textSize="10sp"></Button>
+
+            <Button
+                android:id="@+id/ch_stu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Charge Student"
+                android:backgroundTint="#003b59"
+                android:layout_below="@+id/gen_single_stu_id"
+                android:textSize="10sp"></Button>
+
+            <Button
+                android:id="@+id/enroll_stu_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enroll Student"
+                android:backgroundTint="#003b59"
+                android:layout_below="@+id/gen_single_stu_id"
+                android:layout_toEndOf="@id/ch_stu"
+                android:layout_marginLeft="15dp"
+                android:textSize="10sp"
+                ></Button>
+        </RelativeLayout>
+        <ImageButton
+            android:id="@+id/helper_id"
+            style="?android:attr/borderlessButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/info_d"></ImageButton>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/table_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Table chosen"
+            android:padding="10dp"
+            android:layout_centerInParent="true"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:visibility="invisible"></TextView>
+    </RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ListView
+            android:id="@+id/StudentList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></ListView>
+    </FrameLayout>
+
+
+</LinearLayout>
